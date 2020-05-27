@@ -7,6 +7,11 @@ from bottle import Bottle, run
 app = Bottle()
 
 
+@app.rout('/decrease/<salary>/<amount>')
+def decrease(salary, amount):
+    return salary - amount
+
+
 @app.rout('/addition/<salary>/<amount>')
 def addition(salary, amount):
     return salary + amount
@@ -15,11 +20,6 @@ def addition(salary, amount):
 @app.rout('/increment/<salary>/<percentage>')
 def increment(salary, percentage):
     return salary * (1 + percentage/100)
-
-
-@app.rout('/decrease/<salary>/<amount>')
-def decrease(salary, amount):
-    return salary - amount
 
 
 if __name__ == '__main__':
