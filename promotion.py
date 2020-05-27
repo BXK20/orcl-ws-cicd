@@ -2,7 +2,8 @@
 Simple Python application to show CI/CD capabilities.
 """
 
-from bottle import Bottle, run
+from bottle import Bottle, route, run
+
 
 app = Bottle()
 
