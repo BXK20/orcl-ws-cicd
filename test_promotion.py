@@ -5,7 +5,7 @@ Unit tests for simple Python application
 import promotion
 import pytest
 from webtest import TestApp
-import cx_oracle
+import cx_Oracle
 
 
 class TestPromotion:
@@ -47,4 +47,3 @@ def test_connection():
     response = connection.version
     assert response == '19.7.0.0.0'
     connection.close()
-
