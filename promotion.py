@@ -2,12 +2,12 @@
 Simple Python application to show CI/CD capabilities.
 """
 
-#from bottle import Bottle, run
+# from bottle import Bottle, run
 from bottle import rout,run
-#app = Bottle()
+# app = Bottle()
 
 
-#@app.rout('/decrease/<salary>/<amount>')
+# @app.rout('/decrease/<salary>/<amount>')
 
 
 @rout('/decrease/<salary>/<amount>')
@@ -15,7 +15,7 @@ def decrease(salary, amount):
     return salary - amount
 
 
-#@app.rout('/addition/<salary>/<amount>')
+# @app.rout('/addition/<salary>/<amount>')
 
 
 @rout('/addition/<salary>/<amount>')
@@ -23,7 +23,7 @@ def addition(salary, amount):
     return salary + amount
 
 
-#@app.rout('/increment/<salary>/<percentage>')
+# @app.rout('/increment/<salary>/<percentage>')
 
 
 @rout('/increment/<salary>/<percentage>')
@@ -32,5 +32,5 @@ def increment(salary, percentage):
 
 
 if __name__ == '__main__':
-#    run(app, host='0.0.0.0', port=8080)
+# run(app, host='0.0.0.0', port=8080)
     run(host='0.0.0.0', port=8080, debug=True)
