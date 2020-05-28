@@ -31,10 +31,10 @@ def conn():
 
 if __name__ == '__main__':
     DBUSER = 'hr'
-    DBPASS = 'WelCom3#2020_' 
+    DBPASS = 'WelCom3#2020_'
     DBHOST = 'blk-host.sub05261508050.blkvcn.oraclevcn.com'
     DBSERV = 'pdb01.sub05261508050.blkvcn.oraclevcn.com'
     conn_string = DBUSER + '/' + DBPASS + '@//' + DBHOST + '/' + DBSERV
-    connection = cx_Oracle.connect(conn_string)    
+    connection = cx_Oracle.connect(conn_string)
     run(app, host='0.0.0.0', port=8080)
     connection.close()
