@@ -6,6 +6,7 @@ import promotion
 import pytest
 from webtest import TestApp
 
+
 class TestPromotion:
 
     def test_addition(self):
