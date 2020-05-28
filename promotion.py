@@ -3,7 +3,7 @@ Simple Python application to show CI/CD capabilities.
 """
 
 # from bottle import Bottle, run
-from bottle import rout,run
+from bottle import rout, run
 # app = Bottle()
 
 
@@ -30,7 +30,8 @@ def addition(salary, amount):
 def increment(salary, percentage):
     return salary * (1 + percentage/100)
 
+# run(app, host='0.0.0.0', port=8080)
+ 
 
 if __name__ == '__main__':
-# run(app, host='0.0.0.0', port=8080)
     run(host='0.0.0.0', port=8080, debug=True)
