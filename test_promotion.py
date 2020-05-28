@@ -3,7 +3,8 @@ Unit tests for simple Python application
 """
 
 import promotion
-
+import pytest
+from webtest import TestApp
 
 class TestPromotion:
 
