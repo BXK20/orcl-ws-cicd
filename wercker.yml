@@ -45,5 +45,5 @@ build:
             username: $DOCKER_USERNAME
             password: $DOCKER_PASSWORD
             repository: $DOCKER_REPO
-            registry: https://fra.ocir.io/v2
+            registry: https://iad.ocir.io/v2
     
